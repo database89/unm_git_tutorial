@@ -3,6 +3,7 @@ title: "Simple Markdown File"
 author: "Pavan Datta"
 date: "November 16, 2019"
 output: html_document
+site: html_document
 ---
 
 ```{r setup, include=FALSE}
