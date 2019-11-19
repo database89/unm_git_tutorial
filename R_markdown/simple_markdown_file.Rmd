@@ -3,7 +3,8 @@ title: "Simple Markdown File"
 author: "Pavan Datta"
 date: "November 16, 2019"
 output:
-  md_document: default
+  md_document: default    # This is critical for viewing on GitHub!!!
+# variant: markdown_github
   html_notebook: default
 site: html_notebook
 ---
