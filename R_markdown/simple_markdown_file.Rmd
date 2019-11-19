@@ -2,7 +2,10 @@
 title: "Simple Markdown File"
 author: "Pavan Datta"
 date: "November 16, 2019"
-output: html_document
+output:
+  md_document: default
+  html_notebook: default
+site: html_notebook
 ---
 
 ```{r setup, include=FALSE}
