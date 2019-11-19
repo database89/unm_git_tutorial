@@ -1,6 +1,8 @@
 # UNM Git Tutorial
 A simple tutorial introducing students to Git and GitHub.
 
+Also consider checking out Part [A](https://codeburst.io/git-good-part-a-e0d826286a2a) and [B](https://codeburst.io/git-good-a-practical-introduction-to-git-and-github-in-git-we-trust-f18fa263ec48) of another tutorial.
+
 ## Topics
 ### 1. [Set up Git](https://help.github.com/en/github/getting-started-with-github/set-up-git#setting-up-git)
 
