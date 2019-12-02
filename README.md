@@ -12,13 +12,13 @@ Begin by creating a GitHub account [here](https://github.com/join?source=header-
 ### 2. [Set up Git](https://help.github.com/en/github/getting-started-with-github/set-up-git#setting-up-git)
 Begin by downloading the latest version of Git for your system, [here](https://git-scm.com/downloads).
 
-Once you're done installing Git, it is important to set your Git username for repositories. This "username" represents a string of characters that will identify you in commits. This string could be "John Doe" or some abbreviation like "johndoe" or "jdoe". Open up your terminal (or Git Bash) and type in the following commands, with your choice of username. My personal preference is to keep the username identical to the GitHub username.
+Once you're done installing Git, it is important to set your Git username for repositories. This "username" represents a string of characters that will identify you in commits. This string could be "John Doe" or some abbreviation like "johndoe" or "jdoe". Open up your terminal (or Git Bash) and type in the following commands, with your choice of username. **My personal preference is to keep the username identical to the GitHub username.**
 ```bash
 # Set username
 $ git config --global user.name "John Doe"
 
 # Confirm username
-$ git config --globa user.name
+$ git config --global user.name
 > John Doe
 ```
 
