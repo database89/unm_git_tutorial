@@ -4,6 +4,8 @@
 ## 1. Fork This [Repository](https://github.com/database89/unm_git_tutorial)
 Begin by forking [unm_git_tutorial](https://github.com/database89/unm_git_tutorial) repository in GitHub.
 
+![alt text](https://github.com/database89/unm_git_tutorial/tree/master/Tutorial/github_fork.png "Creating a Fork in GitHub")
+
 Next, clone your fork locally and replace `<username>` with your GitHub username. 
 By default, Git aliases this forked repository with the keyword `origin`.
 
