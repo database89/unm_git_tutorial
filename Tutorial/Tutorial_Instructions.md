@@ -42,21 +42,25 @@ upstream  git@github.com:database89/unm_git_tutorial.git (push)
 Now, your local repository has two unique remote URLs as indicated by `origin` and `upstream`.
 This means that we must be explicit when pulling, pushing, merging, or fetching commits (e.g. `git pull` and `git push`
 will not suffice). 
-Recall that if our local repository has only one remote and we want to be explicit when pull commits, we use the command
+Recall that if our local repository has only one remote and we want to be explicit when pulling commits, we use the command
 `git pull origin master` assuming `origin` is the remote repository URL and `master` doubles has the branchname in both 
 our local and remote repositories.
+
 When the local repository has two ore more unique remote URLs, we need to be explicit about the branch in the remote 
-repository from/to we want to pull/push to/from the specified local branch. When trying to pull commits, the command has
-the form `git pull <remote_alias>/<branchname> <local_branchname>` because in some cases it is possible for the local and
-remote branches to have different names. For example, your local branch might be a feature branch `myFeatureBranch` off `master`
-and you want `myFeatureBranch` to be in sync with `master`. In summary, the code snippet below shows how to explicity keep 
-the local `master` branch in sync with `upstream/master` (where `upstream` refers to the remote URL of the repository, and 
+repository from/to we want to pull/push to/from the specified local branch. 
+In an attempt to be explicit, we do not use the `pull` command, and instead utlize the combination of a `fetch` and `merge`. 
+When fetching commits we can fetch commits from all remotes using `git fetch --all`, we can fetch commits from a specific remote by
+`git fetch <remote_alias>`, or we can fetch commits explicitly in a specific branch in the remote by `git fetch <remote_alias>/<branchname>`.
+When trying to merge commits, the command has the form `git merge <remote_alias>/<branchname> <local_branchname>` because in some cases it is possible for the local and remote branches to have different names. 
+For example, your local branch might be a feature branch `myFeatureBranch` off `master` and you want `myFeatureBranch` to be in sync with `master`. In summary, the code snippet below shows how to explicity keep the local `master` branch in sync with `upstream/master` (where `upstream` refers to the remote URL of the repository, and 
 `master` is the branchname).
 
 ```bash
 ## Keep local repo in sync with upstream
-## git pull <remote>/<branch> <local_branch>
-$ git pull upstream/master master
+## git fetch <remote>
+## git merge <remote>/<branch> <local_branch>
+$ git fetch upstream                      # fetch all commits from all branches in upstream
+$ git merge upstream/master master        # merge upstream/master with local master
 ```
 
 The code snippet below shows a sample workflow:
@@ -80,11 +84,12 @@ $ git commit -m "This is a meaningful commit message."
 ## git push -u <remote> <branchname>
 ## e.g. git push -u origin myFeatureBranch
 ## If the feature branch already exists:
-$ git push origin/myFeatureBranch myFeatureBranch
+$ git push origin myFeatureBranch
 
 ## At some point in the future, the original repository is updated.
 ## We want to sync those changes with our local repository and update the fork.
-$ git pull upstream/master master   # update the local master branch with upstream/master
+$ git fetch upstream                # fetch all commits from all branches in upstrea
+$ git merge upstream/master master  # update the local master branch with upstream/master
 
 ## Getting ready to merge changes from the feature branch into the master branch
 $ git checkout myFeatureBranch      # we were on master, so checkout myFeatureBranch
@@ -92,7 +97,7 @@ $ git merge master                  # merge the new commits from master (local) 
 ## If there are merge-conflicts, resolve them. If not, then update the fork.
 $ git checkout master               # were on myFeatureBranch, so checkout master
 $ git merge myFeatureBranch         # since myFeatureBranch seems good, merge its commits into master
-$ git push origin/master master     # only push the changes from the master branch to the fork
+$ git push origin master            # only push the changes from the master branch to the fork
 
 ## Now, prepare a pull-request in GitHub to request that the changes from the fork get pulled into the
 ## the original repository.
@@ -159,11 +164,12 @@ pull changes from the original repository and push them to your fork.
 
 ```bash
 $ git checkout master                   # checkout the master branch so that it may be updated
-$ git pull upstream/master master       # pull changes from upstream/master into your local master branch
+$ git fetch upstream                    # fetch all commits from all branches in upstream
+$ git merge upstream/master master      # merge changes from upstream/master into your local master branch
 
 # If merge-conflicts resulted from the previous step, then resolve them. If not, move on.
 # Update the fork (origin) with the latest changes from upstream
-$ git push origin/master master
+$ git push origin master
 ```
 
 Now, you are well equipped to collaborate with others by forking projects!
