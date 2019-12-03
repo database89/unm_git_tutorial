@@ -1,11 +1,33 @@
 # UNM Git Tutorial
-A simple tutorial introducing students to Git and GitHub.
+A simple tutorial introducing students to Git and GitHub. This tutorial is sufficient to get you started with Git and GitHub, while
+providing you the tools to be productive. Certain advanced concepts that involve changing Git's history are deliberately not covered in this tutorial. This tutorial is divide into two parts -- (1) a lecture based graph-theoretic understanding of Git and GitHub, and (2) hands-on exercises where you directly interact with Git and GitHub.
 
+It is no coincidence that this Git tutorial is made available on GitHub! The intention here is for you to be able to have access to this repository and access or reference the materials as and when you please.
+
+This tutorial is meant to serve as a thorough introduction to Git. Practice is the key to reaching expert-level! You find yourself needing to  review the materials, learning Bash, or you may end up searching online for advanced techniques. Make Git work for you!
+
+### Part 1: Lecture and Theory
+While many students prefer examples and applications, the theory behind Git and GitHub is crucial to understanding the power of Git, the numerous things you can do with Git, and how you can think through tough scenarios. If you can understand the graph-theoretic notions that make up the backbone of Git, then you're all set to start using it. There is more power in understanding Git than simply knowing different sequences of commands. (Knowing the sequence of steps to start a car simply isn't adequate when your car doesn't start. It is also important to recognize symptoms so that you may identify the underlying problem.)
+
+The lecture portion covers most Git basics, provides context-based visuals and examples, and introduces commands.
+
+You can view the presentation slides [here](https://github.com/database89/unm_git_tutorial/blob/master/Presentation/Introduction%20to%20Git%20for%20Version%20Control.pdf).
+
+### Part 2: Exercises with Git and GitHub
+The number of exercises and examples that we can get through is limited by the length of the class period. The goal is to go through two semi-involved examples/exercises. 
+
+The [first exercise](https://github.com/database89/unm_git_tutorial/blob/master/Tutorial/Tutorial_Instructions.md) involves forking this repository, making some changes, updating the fork, generating a pull-request, and eventually updating your fork again. The purpose of this exercise is to use Git and GitHub simultaneously while learning about the collaborative power of GitHub as it pertains to deploying large scale projects, packages, and code-bases. This is a common use case for professionals.
+
+The second exercise is much more general and open-ended. It involves creating a repository, making changes to files, promoting changes to the remote, branching, etc. This is the most common use case for students.
+
+### Resources Worth Looking At
 Also consider checking out Part [A](https://codeburst.io/git-good-part-a-e0d826286a2a) and [B](https://codeburst.io/git-good-a-practical-introduction-to-git-and-github-in-git-we-trust-f18fa263ec48) of another tutorial.
 
 If you want some short but useful pointers to help reinforce or grow your skills, checkout [GitHub Guides](https://guides.github.com/).
 
-## Topics
+---
+
+## Selected Topics for Getting Started
 ### 1. Greate a GitHub account
 Begin by creating a GitHub account [here](https://github.com/join?source=header-home). If you can, register with a .edu email address so that you can get the [GitHub Student Developer Pack](https://education.github.com/pack).
 
