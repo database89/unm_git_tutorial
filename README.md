@@ -4,7 +4,7 @@ providing you the tools to be productive. Certain advanced concepts that involve
 
 It is no coincidence that this Git tutorial is made available on GitHub! The intention here is for you to be able to have access to this repository and access or reference the materials as and when you please.
 
-This tutorial is meant to serve as a thorough introduction to Git. Practice is the key to reaching expert-level! You find yourself needing to  review the materials, learning Bash, or you may end up searching online for advanced techniques. Make Git work for you!
+This tutorial is meant to serve as a thorough introduction to Git. Practice is the key to reaching expert-level! You may find yourself needing to  review the materials, learning Bash, or you may end up searching online for advanced techniques. Make Git work for you!
 
 ### Part 1: Lecture and Theory
 While many students prefer examples and applications, the theory behind Git and GitHub is crucial to understanding the power of Git, the numerous things you can do with Git, and how you can think through tough scenarios. If you can understand the graph-theoretic notions that make up the backbone of Git, then you're all set to start using it. There is more power in understanding Git than simply knowing different sequences of commands. (Knowing the sequence of steps to start a car simply isn't adequate when your car doesn't start. It is also important to recognize symptoms so that you may identify the underlying problem.)
@@ -21,9 +21,14 @@ The [first exercise](https://github.com/database89/unm_git_tutorial/blob/master/
 The second exercise is much more general and open-ended. It involves creating a repository, making changes to files, promoting changes to the remote, branching, etc. This is the most common use case for students.
 
 ### Resources Worth Looking At
-Also consider checking out Part [A](https://codeburst.io/git-good-part-a-e0d826286a2a) and [B](https://codeburst.io/git-good-a-practical-introduction-to-git-and-github-in-git-we-trust-f18fa263ec48) of another tutorial.
+Also consider checking out [Part A](https://codeburst.io/git-good-part-a-e0d826286a2a) and [Part B](https://codeburst.io/git-good-a-practical-introduction-to-git-and-github-in-git-we-trust-f18fa263ec48) of another Git tutorial.
 
 If you want some short but useful pointers to help reinforce or grow your skills, checkout [GitHub Guides](https://guides.github.com/).
+
+If you need help with using markdown, try this [markdown cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
+
+Some [simple Bash commands](https://hackernoon.com/top-10-bash-file-system-commands-you-cant-live-without-4cd937bd7df1).
+Some [advanced Bash commands](https://dev.to/awwsmm/101-bash-commands-and-tips-for-beginners-to-experts-30je).
 
 ---
 
