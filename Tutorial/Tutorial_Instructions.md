@@ -125,8 +125,34 @@ Now, go to your GitHub account and verify that the `<username>` branch was pushe
 ## 3. Pull-Request
 To verify that your branch was added to your fork you should see something like in the image below, except with your
 branch's name. When you are ready to move forward with your pull-request, select the green **Pull-Request** button.
-![alt text](https://github.com/database89/unm_git_tutorial/tree/master/Tutorial/pull_request_1.png "Creating a Pull-Request 1")
+![Creating a Pull-Request 1](https://github.com/database89/unm_git_tutorial/blob/master/Tutorial/pull_request_1.png)
+
 
 The image below is an example of what the next screen looks like. This is where you configure you pull-request.
-![alt text](https://github.com/database89/unm_git_tutorial/tree/master/Tutorial/pull_request_2.png "Creating a Pull-Request 2")
 
+
+![Creating a Pull-Request 2](https://github.com/database89/unm_git_tutorial/blob/master/Tutorial/pull_request_2.png)
+1. Going from left to right you see the `dest_remote/dest_repo` and `dest_branch` <-- `source_remote/source_repo` and `source_branch`.
+**Always check and confirm that this is correct.**
+2. If everything looks correct and you're sure you want to go through with the pull-request, select this button.
+**NOTE: Even if you go through with the pull-request you can still cancel it later.**
+3. You can view all of the commits that are part of your pull-request here. You can view all of the changed files, and all of the line-by-line
+changes.
+
+When you are ready, submit the pull-request (you will be directed to a new screen). Wait for your pull-request to either be accepted or rejected.
+
+## 4. Update Your Fork
+At some point your forked repository will become out-of-sync with the original repository (in most cases it will fall behind).
+If you are actively working on code changes, it is important for your fork to be up-to-date. This means that you will need to
+pull changes from the original repository and push them to your fork.
+
+```bash
+$ git checkout master                   # checkout the master branch so that it may be updated
+$ git pull upstream/master master       # pull changes from upstream/master into your local master branch
+
+# If merge-conflicts resulted from the previous step, then resolve them. If not, move on.
+# Update the fork (origin) with the latest changes from upstream
+$ git push origin/master master
+```
+
+Now, you are well equipped to collaborate with others by forking projects!
