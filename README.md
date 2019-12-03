@@ -11,7 +11,7 @@ While many students prefer examples and applications, the theory behind Git and 
 
 The lecture portion covers most Git basics, provides context-based visuals and examples, and introduces commands.
 
-You can view the presentation slides [here](https://github.com/database89/unm_git_tutorial/blob/master/Presentation/Introduction%20to%20Git%20for%20Version%20Control.pdf).
+You can view the presentation slides [here](https://database89.github.io/unm_git_tutorial/Presentation/Introduction%20to%20Git%20for%20Version%20Control.pdf).
 
 ### Part 2: Exercises with Git and GitHub
 The number of exercises and examples that we can get through is limited by the length of the class period. The goal is to go through two semi-involved examples/exercises. 
