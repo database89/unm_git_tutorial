@@ -134,6 +134,17 @@ changes.
 
 When you are ready, submit the pull-request (you will be directed to a new screen). Wait for your pull-request to either be accepted or rejected.
 
+Once your pull-request is accepted your feature is complete. To keep things from getting chaotic and messy, you may choose to delete your feature branch in your local repository.
+
+```bash
+$ git checkout master                   # checkout the master branch; you be on the branch you are deleting
+$ git branch -d <username>              # delete your feature branch
+$ git branch                            # view the list of branches that remain in your local repository
+> * master
+```
+If you want to delete the branch from your fork on GitHub, you will need to use the GitHub interface. Select **Branches** in the menu at the top, and then select **All Branches**. To delete a branch, simply select the trash-can icon to the very right. 
+**NOTE:** Deleting a branch in GitHub **does not** delete the branch from your local Git repository.
+
 ## 4. Update Your Fork
 At some point your forked repository will become out-of-sync with the original repository (in most cases it will fall behind).
 If you are actively working on code changes, it is important for your fork to be up-to-date. This means that you will need to
