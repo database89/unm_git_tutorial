@@ -122,3 +122,10 @@ $ git push -u origin <username>
 Now, go to your GitHub account and verify that the `<username>` branch was pushed to your fork.
 
 ## 3. Pull-Request
+To verify that your branch was added to your fork you should see something like in the image below, except with your
+branch's name. When you are ready to move forward with your pull-request, select the green **Pull-Request** button.
+![alt text](https://github.com/database89/unm_git_tutorial/tree/master/Tutorial/pull_request_1.png "Creating a Pull-Request 1")
+
+The image below is an example of what the next screen looks like. This is where you configure you pull-request.
+![alt text](https://github.com/database89/unm_git_tutorial/tree/master/Tutorial/pull_request_2.png "Creating a Pull-Request 2")
+
